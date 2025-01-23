@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Task</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Add a New Task</h1>
+        <form action="{{ url_for('add_task') }}" method="POST">
+            <input type="text" name="task_name" placeholder="Enter task name" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <a href="{{ url_for('index') }}" class="back-button">Back to Tasks</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Todos</title>
+</head>
+<body>
+    <h1>All Todos</h1>
+    <ul>
+    {% for todo in allTodo %}
+        <li>{{ todo.title }}: {{ todo.desc }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>

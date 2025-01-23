@@ -1,0 +1,16 @@
+#Byte-compiled files
+__pycache__/
+.pyc
+.pyo
+
+#Flask instacnce folder (containes runtime data like SQLite DBs)
+instance/
+.db
+
+#Enviroment files
+.env
+.venv/
+venv/
+
+#excel ignore
+~$*

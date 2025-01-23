@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Todo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>About Todo</h1>
+        {% if todo %}
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">{{ todo.title }}</h5>
+                <p class="card-text">{{ todo.desc }}</p>
+                <small class="text-muted">Created on: {{ todo.date_created }}</small>
+            </div>
+        </div>
+        {% else %}
+        <p>No Todo item found in the database.</p>
+        {% endif %}
+
+        <a href="/" class="btn btn-primary mt-3">Go Back to Home</a>
+    </div>
+</body>
+
+</html>
