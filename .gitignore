@@ -11,6 +11,10 @@ instance/
 .env
 .venv/
 venv/
+.excelenv/
+excelenv 
+.ormenv/
+ormenv
 
 #excel ignore
 ~$*
