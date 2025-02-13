@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Maker</title>
+    
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Portfolio Maker</h1>
+      <form action="{{url_for('portfolio')}}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <textarea name="bio" placeholder="Your Bio" required></textarea>
+        <input type="text" name="school" placeholder="Your School" required />
+        <input type="text" name="college" placeholder="Your College" required />
+        <input type="url" name="github" placeholder="GitHub Profile" />
+        <input type="url" name="instagram" placeholder="Instagram Profile" />
+        <input type="url" name="youtube" placeholder="YouTube Channel" />
+        <button type="submit">Generate Portfolio</button>
+      </form>
+    </div>
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
+  </body>
+</html>
